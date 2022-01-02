@@ -1,9 +1,59 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
+import ReactTooltip from "react-tooltip";
 
 import Cross from "../images/cross.svg";
 import Arrow from "../images/arrow.svg";
 
+const allSlogans = [
+  "Life isn't about getting and having, it's about giving and being.",
+  "Whatever the mind of man can conceive and believe, it can achieve.",
+  "There is no Sore it will Not Heal, No cool it will not Subdue.",
+  "Strive not to be a success, but rather to be of value.",
+  "The most difficult thing is the decision to act, the rest is merely tenacity.",
+  "We must balance conspicuous consumption with conscious capitalism.",
+  "Whatever the mind of man can conceive and believe, it can achieve.",
+  "I attribute my success to this: I never gave or took any excuse.",
+  "Definiteness of purpose is the starting point of all achievement.",
+  "Life is what happens to you while you're busy making other plans.",
+  "The most common way people give up their power is by thinking they don't have any.",
+  "We become what we think about.",
+];
+
+const SloganComponent = () => {
+  const [tooltipValue, setTooltipValue] = useState("Click to copy");
+
+  const copySlogan = (slogan) => {
+    navigator.clipboard.writeText(slogan);
+    setTooltipValue("Copied");
+  };
+
+  return (
+    <>
+      {allSlogans.map((slogan, index) => (
+        <div className="relative flex flex-col group" key={index}>
+          <button
+            data-tip={tooltipValue}
+            data-place={index % 2 === 0 ? "left" : "right"}
+            data-class="tooltip"
+            type="button"
+            onClick={() => copySlogan(slogan)}
+            onMouseLeave={() => setTooltipValue("Click to copy")}
+            class="h-fit rounded p-4 bg-[hsl(0,_0%,_95%)] flex flex-col items-start justify-start"
+          >
+            <p className="text-left">{slogan}</p>
+          </button>
+        </div>
+      ))}
+      <ReactTooltip
+        effect="solid"
+        getContent={() => tooltipValue}
+        arrowColor="transparent"
+        backgroundColor="#4D4D4D"
+      />
+    </>
+  );
+};
 
 const SloganMaker = () => {
   const [value, setValue] = useState("cozy");
@@ -38,7 +88,7 @@ const SloganMaker = () => {
           <button className="rounded px-4 py-2 bg-primary text-white text-lg">
             Generate slogans
           </button>
-          <div className="w-full borderWidth-1 border-black/20"></div>
+          <div className="w-full border border-black/10" />
           <div class="w-full flex flex-row items-center justify-between gap-2 flex-wrap">
             <p class="font-medium text-lg">
               We have generated 1,023 slogans for “cozy”
@@ -46,8 +96,9 @@ const SloganMaker = () => {
             <button class="rounded border border-primary px-4 py-2 text-primary">
               Download all
             </button>
-          </div>
+          </div>   
           <div class="w-full grid grid-rows-none sm:grid-cols-1 md:grid-cols-2 gap-4">
+            <SloganComponent />
           </div>
           <div class="w-full border border-black/10"></div>
           <div class="w-full flex flex-row items-center justify-between gap-4">
