@@ -25,11 +25,11 @@ const featuresObj = [
 const Features = () => {
   return (
     <div className="p-4 bg-primary/10">
-      <div className="w-[min(1024px,_100%)] mx-auto p-6 flex flex-row items-start justify-center gap-8 flex-wrap">
+      <div className="w-[min(1024px,_100%)] mx-auto py-6 flex flex-row items-start justify-center gap-8 flex-wrap">
         {featuresObj.map((feature) => (
-          <div className="max-w-[300px] flex flex-col items-center justify-start gap-2" key={feature.title}>
+          <div className="max-w-[320px] flex flex-col items-center justify-start gap-2" key={feature.title}>
             <img src={feature.image} alt="logo" />
-            <p className="font-Galano-Medium text-lg">{feature.title}</p>
+            <p className="font-galano-medium text-lg">{feature.title}</p>
             <p className="text-[hsl(0,_0%,_30%)] text-center">
               {feature.description}
             </p>

@@ -6,11 +6,6 @@ module.exports = {
       white: "#fff",
       black: "#000",
     },
-    extend: {
-      fontFamily: {
-        Galano: ["Galano Grotesque"],
-      },
-    },
   },
   plugins: [],
 };

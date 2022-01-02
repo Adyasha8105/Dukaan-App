@@ -17,18 +17,18 @@
   src: url(./fonts/Galano\ Grotesque\ Medium.otf);
 }
 
-.font-Galano {
+.font-galano {
   font-family: Galano Grotesque;
 }
 
-.font-Galano-Semibold {
+.font-galano-semibold {
   font-family: Galano Grotesque Semibold;
 }
 
-.font-Galano-Medium {
+.font-galano-medium {
   font-family: Galano Grotesque Medium;
 }
 
 .tooltip {
-  padding: 2px 6px !important;
+  padding: 3px 6px !important;
 }

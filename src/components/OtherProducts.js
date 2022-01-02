@@ -34,12 +34,12 @@ const OtherProducts = () => {
   return (
     <div className="px-4 py-12">
       <div className="w-[min(1024px,_100%)] mx-auto p-4 flex flex-col items-stretch justify-start gap-8">
-        <h2 className="flex font-Galano-Semibold text-3xl justify-center sm:justify-center lg:justify-start">Try our other free products</h2>
+        <h2 className="flex font-galano-semibold text-3xl justify-center sm:justify-center lg:justify-start">Try our other free products</h2>
         <div className="grid grid-rows-none place-items-center gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {productsObj.map((product) => (
-            <div className="max-w-[300px] flex flex-col items-start justify-start gap-1" key={product.title}>
+            <div className="max-w-[320px] flex flex-col items-start justify-start gap-1" key={product.title}>
               <img src={product.image} alt="logo" />
-              <p className="font-Galano-Medium text-lg mt-2">{product.title}</p>
+              <p className="font-galano-medium text-lg mt-2">{product.title}</p>
               <p className="text-[hsl(0,_0%,_30%)]">{product.description}</p>
             </div>
           ))}

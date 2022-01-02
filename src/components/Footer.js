@@ -30,7 +30,7 @@ const Footer = () => {
                 className="flex flex-row items-center justify-start gap-2"
               >
                 <span>Jobs</span>
-                <span className="rounded-full w-6 h-6 bg-white text-black text-sm leading-none grid place-items-center">
+                <span className="rounded-full w-5 h-5 bg-white text-black text-sm leading-none grid place-items-center">
                   3
                 </span>
               </a>
