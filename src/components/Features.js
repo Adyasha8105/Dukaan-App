@@ -29,7 +29,7 @@ const Features = () => {
         {featuresObj.map((feature) => (
           <div className="max-w-[300px] flex flex-col items-center justify-start gap-2" key={feature.title}>
             <img src={feature.image} alt="logo" />
-            <p className="font-medium text-lg">{feature.title}</p>
+            <p className="font-Galano-Medium text-lg">{feature.title}</p>
             <p className="text-[hsl(0,_0%,_30%)] text-center">
               {feature.description}
             </p>

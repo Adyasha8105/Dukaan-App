@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Galano Grotesque;
+  src: url(./fonts/Galano\ Grotesque.otf);
+}
+
+@font-face {
+  font-family: Galano Grotesque Semibold;
+  src: url(./fonts/Galano\ Grotesque\ Semi\ Bold.otf);
+}
+
+@font-face {
+  font-family: Galano Grotesque Medium;
+  src: url(./fonts/Galano\ Grotesque\ Medium.otf);
+}
+
+.font-Galano {
+  font-family: Galano Grotesque;
+}
+
+.font-Galano-Semibold {
+  font-family: Galano Grotesque Semibold;
+}
+
+.font-Galano-Medium {
+  font-family: Galano Grotesque Medium;
+}
+
 .tooltip {
   padding: 2px 6px !important;
 }

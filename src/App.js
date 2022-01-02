@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="bg-white">
+    <div className="bg-white font-Galano">
       <Header />
       <SloganMaker />
       <Features />

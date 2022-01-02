@@ -59,10 +59,10 @@ const SloganMaker = () => {
   const [value, setValue] = useState("cozy");
 
   return (
-    <div className="px-4 py-12 bg-[hsl(0,_0%,_98%)]">
-      <div className="w-[min(1024px,_100%)] mx-auto p-4 -mt-32 rounded-lg shadow shadow-slate-200/50 p-8 bg-white">
+    <div className="px-6 py-12 bg-[hsl(0,_0%,_98%)]">
+      <div className="w-[min(1024px,_100%)] mx-auto py-12 px-4 -mt-32 rounded-lg shadow shadow-slate-200/50 bg-white">
         <div className="w-[min(720px,_100%)] mx-auto flex flex-col items-start justify-start gap-6">
-          <div className="font-bold text-3xl text-black">Free slogan maker</div>
+          <div className="font-Galano-Semibold text-3xl text-black">Free slogan maker</div>
           <p className="text-black/70 text-lg">
             Simply enter a term that describes your business, and get up to
             1,000 relevant slogans for free.
@@ -90,7 +90,7 @@ const SloganMaker = () => {
           </button>
           <div className="w-full border border-black/10" />
           <div class="w-full flex flex-row items-center justify-between gap-2 flex-wrap">
-            <p class="font-medium text-lg">
+            <p class="font-Galano-Medium text-lg">
               We have generated 1,023 slogans for “cozy”
             </p>
             <button class="rounded border border-primary px-4 py-2 text-primary">
